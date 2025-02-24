@@ -1,0 +1,8 @@
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model_name = "gpt2"
+model = AutoModelForCausalLM.from_pretrained(model_name)  # This should work now
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+model.save_pretrained("C:/ISRO_Chatbot_Setup/GPT2_Model")
+tokenizer.save_pretrained("C:/ISRO_Chatbot_Setup/GPT2_Model")
